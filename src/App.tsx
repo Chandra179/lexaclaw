@@ -1,10 +1,13 @@
 import type { Component } from "solid-js";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 const App: Component = () => {
   return (
-    <main class="flex min-h-screen flex-col items-center justify-center bg-gray-50">
-      <h1 class="text-4xl font-bold text-gray-900">Lexaclaw</h1>
-    </main>
+    <div class="min-h-screen bg-gray-50">
+      <Navbar />
+      <Home />
+    </div>
   );
 };
 
